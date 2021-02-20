@@ -1,0 +1,77 @@
+.schedule {
+    padding: 80px 0px;
+}
+
+.schedule .content {
+    -webkit-display: flex;
+    display: flex;
+}
+
+.schedule .content .box {
+    flex: 50%;
+    max-width: 100%;
+    padding: 15px;
+}
+
+.schedule .content .text h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 20px;
+}
+
+.schedule .content .text p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #222222;
+    margin: 0;
+    padding: 0px 0px 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.schedule .content .text img {
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
+.schedule .content .timing .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule .content .timing .table td {
+    border: 1px solid #dfdfdf;
+    padding: 8px;
+    font-size: 15px;
+    text-align: center;
+    color: #222222;
+}
+
+.schedule .content .timing .table tr:nth-child(even) td.day {
+    background-color: #222222;
+}
+
+.schedule .content .timing .table tr:nth-child(odd) td.day {
+    background-color: #444444;
+}
+
+.schedule .content .timing .table tr:nth-child(1) td.day {
+    background-color: #c11325;
+}
+
+.schedule .content .timing .table tr td.day {
+    color: #ffffff;
+    border-color: transparent;
+}
+.slideInRight{
+    line-height: 3;
+}
+@media(max-width: 767px) {
+    .schedule .content {
+        flex-wrap: wrap;
+    }
+    .schedule .content .box {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

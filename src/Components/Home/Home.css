@@ -1,0 +1,63 @@
+.home{
+  height: 100vh;
+  background-image: url('../../images/home.jpg');
+  background-size: cover;
+  padding: 15px;
+  -webkit-display: flex;
+  display: flex;
+  position: relative;
+}
+.home .go-down{
+  position: absolute;
+  bottom: 50px;
+  width: 26px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  display: block;
+  border-radius: 4px;
+  text-align: center;
+  left: 50%;
+  margin-left: -13px;  
+} 
+.home .go-down .fa{  
+  animation: goDown 1s ease infinite;
+  color: white;
+} 
+@keyframes goDown{
+  0%{transform: translateY(0);opacity: 0.5;}
+  100%{transform: translateY(10px);}
+}
+.home .container{
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.home h1{
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+.home h1 span{
+  color: #c11325;
+}
+
+@media(max-width: 991px){
+  .home{
+    background-position: center;
+  }
+}
+
+@media(max-width: 767px){
+ .home h1{
+     font-size: 40px;
+ }
+}
+
+@media(max-width: 550px){
+ .home h1{
+     font-size: 30px;
+ }
+}

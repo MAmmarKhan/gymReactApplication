@@ -1,0 +1,129 @@
+.service {
+    padding: 80px 10px;
+    background-color: #c11325;
+}
+
+.service .content {
+    -webkit-display: flex;
+    display: flex;
+}
+
+.service .content .box {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+
+.service .content .text h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 0px 0px 20px;
+}
+
+.service .content .text p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0px 0px 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.service .content .text .btn {
+    padding: 8px 30px;
+    background-color: #222222;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.service .content .text .btn:hover {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.service .content .accordian-container {
+    margin-bottom: 5px;
+}
+
+.service .content .accordian-container .head {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 12px 15px;
+    cursor: pointer;
+}
+
+.service .content .accordian-container .head .fa {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+.service .content .accordian-container .head h4 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.service .content .accordian-container.active .head {
+    background-color: #222222;
+}
+
+.service .content .accordian-container .body {
+    display: block;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity .8s ease-out;
+    transition: max-height 0.4s ease-in;
+}
+
+.service .content .accordian-container.active .body {
+    max-height: 100px;
+    opacity: 1;
+    border-top: 1px solid #333333;
+    padding: 15px;
+    background-color: #222222;
+    transition: max-height 0.3s ease-out;
+}
+
+.service .content .accordian-container .body p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media(max-width: 767px) {
+    .service .content {
+        flex-wrap: wrap;
+    }
+    .service .content .box {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 425px) {
+    .service {
+        padding: 80px 30px;
+    }
+}
