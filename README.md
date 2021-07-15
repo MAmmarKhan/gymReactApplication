@@ -1,6 +1,6 @@
 # Deployed Link
 
-`Surge` farmgym.surge.sh
+`Surge` http://farmgym.surge.sh/
 
 ## Available Scripts
 
